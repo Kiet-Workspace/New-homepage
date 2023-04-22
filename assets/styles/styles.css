@@ -39,6 +39,10 @@ header, nav, main {
     width: 100%;
 }
 
+ul {
+    margin-bottom: 0;
+}
+
 li {
     list-style: none;
 }
@@ -213,7 +217,7 @@ hr {
 @media screen and (min-width: 768px) {
     /* Chung */
     body {
-        padding: 0 10%;
+        padding: 3% 10% 0;
         height: 100vh;
     }
 
@@ -240,8 +244,45 @@ hr {
         display: none;
     }
 
-    nav {
+    .close-nav {
         display: none;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        padding: 3% 10% 0;
+    }
+
+    .nav-main {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 5rem;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav-main ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 0;
+        width: 40%;
+    }
+
+    .nav-main li {
+        font-size: 1.1rem;
+    }
+
+    .nav-main li:hover {
+        color: var(--soft-red);
+        cursor: pointer;
     }
 
     /* Main */
