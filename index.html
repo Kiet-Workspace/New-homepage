@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | News homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img class="page-logo img-fluid" src="./assets/images/logo.svg" alt="W. logo">
+    <img class="open-nav img-fluid" src="./assets/images/icon-menu.svg" alt="Open menu">
+  </header>
+  <div class="nav-bgr"></div>
+  <nav class="navigation">
+    <!-- Phần chứa background được làm mờ nằm dưới thanh nav -->
+      <!-- Phần chứa nav chính -->
+      <div class="nav-main">
+        <img class="close-nav img-fluid rounded float-end" src="./assets/images/icon-menu-close.svg" alt="">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Phần thân -->
+  <main class="row">
+    <!-- Nội dung chính -->
+    <div class="body-main col-lg-8 row">
+      <div class="body-main-pic col-lg-12">
+        <img class="img-fluid img-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="The bright future of web 3.0?">
+        <img class="img-fluid img-desktop" src="./assets/images/image-web-3-desktop.jpg" alt="The bright future of web 3.0?">
+      </div>
+      <h1 class="body-main-title col-lg-6">The Bright <br> Future of Web 3.0?</h1>
+      <div class="body-main-content col-lg-6">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button class="read-more-btn" type="button">READ MORE</button>
+      </div>
+    </div>
+    <!-- Nội dung phụ - Phần New -->
+    <div class="body-second col-lg-4">
+        <h2>New</h2>
+        <div class="body-second-content">
+          <div class="body-second-new">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr>
+          <div class="body-second-new">
+            <h3>The Downsides of AI Artistry</h3>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div class="body-second-new">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+    </div>
+    <!-- Phần top tìm kiếm -->
+    <div class="body-third col-lg-12 row">
+      <div class="top-search top-one col-lg-4 row">
+        <div class="top-search-pic col-4">
+          <img class="img-fluid" src="./assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="top-search-content col-8">
+          <strong class="top-search-order">01</strong>
+          <h3 class="top-search-title">Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>                                                     
+        </div>
+      </div>
+      <div class="top-search top-two col-lg-4 row">
+        <div class="top-search-pic col-4">
+          <img class="img-fluid" src="./assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="top-search-content col-8">
+          <strong class="top-search-order">02</strong>
+          <h3 class="top-search-title">Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p> 
+        </div>
+      </div>
+      <div class="top-search top-three col-lg-4 row">
+        <div class="top-search-pic col-4">
+          <img class="img-fluid" src="./assets/images/image-gaming-growth.jpg" alt="">
+        </div>
+        <div class="top-search-content col-8">
+          <strong class="top-search-order">03</strong>
+          <h3 class="top-search-title">The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p> 
+        </div>
+      </div>
+    </div>
+  </main> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kiet Workspace</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
